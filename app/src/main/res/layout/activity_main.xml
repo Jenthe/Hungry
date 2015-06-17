@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:theme="@style/ToolbarStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="profile picture"
+                android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                android:layout_marginLeft="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/imgBar"
+                android:layout_width="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="profile picture"
+                android:src="@drawable/experience_bar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-7dp"
+                android:layout_toRightOf="@id/imgProfile"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="25/100"
+                android:id="@+id/tvExp"
+                android:background="#00223344"
+                android:layout_alignLeft="@+id/imgBar"
+                android:layout_alignStart="@+id/imgBar"
+                android:layout_alignTop="@+id/imgBar"
+                android:layout_alignRight="@+id/imgBar"
+                android:layout_alignEnd="@+id/imgBar"
+                android:layout_alignBottom="@+id/imgBar"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Lv. 1"
+                android:background="#00223344"
+                android:id="@+id/tvLevel"
+                android:layout_below="@+id/imgBar"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@+id/imgBar"
+                android:layout_alignStart="@+id/imgBar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Just starting"
+                android:id="@+id/tvRank"
+                android:layout_alignTop="@+id/tvLevel"
+                android:layout_toRightOf="@+id/tvLevel"
+                android:layout_toEndOf="@+id/tvLevel"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/imgBar"
+                android:src="@drawable/appbar_flag_wavy_colored"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="5"
+                android:gravity="center_vertical"
+                android:id="@+id/tvFlags"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/imageView" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
+
+

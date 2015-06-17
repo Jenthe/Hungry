@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="clr_blue" type="color">#229cb6</item>
+    <item name="clr_blue_status_bar" type="color">#1c8399</item>
+    <item name="clr_white" type="color">#ffffff</item>
+    <item name="clr_transparant" type="color">0x00000000</item>
+</resources>

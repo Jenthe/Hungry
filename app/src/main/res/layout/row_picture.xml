@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvPicture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/testpicture" />
+
+            <TextView
+                android:id="@+id/tvBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/imgPicture"
+                android:layout_toRightOf="@+id/imgPicture"
+                android:text="Jenthe"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/imgPicture"
+                android:layout_toRightOf="@+id/imgPicture"
+                android:text="Cooked by"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignLeft="@+id/tvBy"
+                android:layout_alignStart="@+id/tvBy"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/appbar_heart_colored" />
+
+            <ImageButton
+                android:id="@+id/btnHealthy"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignLeft="@+id/tvBy"
+                android:layout_alignStart="@+id/tvBy"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/appbar_tree_colored" />
+
+            <ImageButton
+                android:id="@+id/btnRecipe"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignLeft="@+id/tvBy"
+                android:layout_alignStart="@+id/tvBy"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/appbar_draw_colored" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

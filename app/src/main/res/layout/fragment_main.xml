@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.sweatandsugar.hungry.MainFragment">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTakePicture"
+        android:src="@drawable/appbar_camera"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMyPictures"
+        android:src="@drawable/appbar_camera_switch"
+        android:layout_alignBottom="@+id/btnTakePicture"
+        android:layout_toRightOf="@+id/btnTakePicture" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAllPictures"
+        android:src="@drawable/appbar_food"
+        android:layout_alignBottom="@+id/btnMyPictures"
+        android:layout_toRightOf="@+id/btnMyPictures" />
+</RelativeLayout>
